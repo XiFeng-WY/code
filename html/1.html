@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function changePage() {
+  window.location.replace("index.html");
+}
+
+// 假设你有一个按钮，点击时调用 changePage 函数
+// 你可以这样调用：
+// document.getElementById("myButton").addEventListener("click", changePage);
+    </script>
+</head>
+<body>
+    <form id="loginForm" action="">
+
+        <div style="text-align: center; width: 1200px; border: green solid 1px;">
+            <table width="318" height="167" border="1" align="center">
+                 <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">登录</button>
+                <tr>
+                    <td>
+                        院系：<select name="select1">
+                            <option>信息工程学院</option>
+                            <option>化工院</option>
+                            <option selected="selected">体育学院</option>
+                            <option>文学院</option>
+                            <option>商学院</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        性别：男<input id="Radio1" type="radio" value="男" name="name" />
+                        女<input id="Radio1" type="radio" value="女" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        爱好：<input id="Checkbox1" type="checkbox" value="唱" />
+                        唱
+                        <input id="Checkbox1" type="checkbox" value="跳" />
+                        跳
+                        <input id="Checkbox1" type="checkbox" value="RAP" />
+                        RAP
+                        <input id="Checkbox1" type="checkbox" value="篮球" />
+                        篮球
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        确定保存：<input id="btn" type="button" value="button" οnclick="changePage()" />
+                        重新编写： <input id="Reset1" type="reset" value="reset" />
+                    </td>
+                </tr>
+
+
+
+            </table>
+
+       
+    </form>
+</body>
+</html>
